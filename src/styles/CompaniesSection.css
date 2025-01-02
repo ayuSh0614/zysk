@@ -1,0 +1,55 @@
+/* CompaniesSection.css */
+
+.companies-container {
+    text-align: center;
+    padding: 96px;
+    border-top: 1px solid #eaeaea; /* Light purple border on top */
+    border-bottom: 1px dashed #eaeaea; /* Dashed light purple border */
+    background-color: #ffffff; /* White background */
+  }
+  
+  .companies-text {
+    font-size: 16px;
+    color: #475467; /* Muted text color */
+    margin-bottom: 20px;
+    font-weight: 500;
+  }
+  
+  .companies-logos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+     /* Space between logos */
+  }
+  
+  .company-logo {
+    width: 170px; /* Set fixed size for logos */
+    height: 48px;
+    object-fit: contain;
+    transition: filter 0.3s ease; /* Smooth transition */
+  }
+  
+  .company-logo:hover {
+    filter: none; /* Restore color on hover */
+  }
+  
+
+  @media (max-width: 768px) {
+    /* Adjust padding for smaller screens */
+    .companies-container {
+      padding: 48px; /* Reduce padding */
+    }
+  
+    /* Adjust logo grid for smaller screens */
+    .companies-logos {
+      flex-wrap: wrap; /* Allow wrapping of logos */
+      justify-content: center; /* Center the rows */
+      gap: 16px; /* Add space between rows and columns */
+    }
+  
+    .company-logo {
+      width: calc(50% - 16px); /* Set each logo to take half the width, minus gap */
+      height: auto; /* Maintain aspect ratio */
+      margin-bottom: 16px; /* Add spacing between rows */
+    }
+  }

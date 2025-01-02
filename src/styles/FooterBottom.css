@@ -1,0 +1,50 @@
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-top: 1px solid #e5e7eb; /* Light gray border */
+    background-color: #ffffff; /* White background */
+    font-size: 14px;
+    color: #6b7280; /* Gray text color */
+}
+
+.footer-left {
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo {
+    width: 142px;
+    height: 32px;
+    margin-right: 10px;
+}
+
+.footer-brand-name {
+    font-weight: bold;
+    color: #111827; /* Dark text color */
+}
+
+.footer-right {
+    text-align: right;
+    font-size: 16px;
+    font-weight: 400;
+    color: #667085;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center align the content */
+        text-align: center; /* Center the text for mobile */
+    }
+
+    .footer-left {
+        margin-bottom: 10px; /* Space between logo and copyright text */
+    }
+
+    .footer-right {
+        font-size: 14px; /* Adjust font size for mobile */
+    }
+}

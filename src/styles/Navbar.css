@@ -1,0 +1,128 @@
+/* Navbar.css */
+.navbar-custom {
+  background-color: #ffffff; /* White background */
+  border-bottom: 1px solid #e0e0e0; /* Thin bottom border */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  height: 80px; /* Consistent navbar height */
+  padding: 0 20px; /* Side padding for content alignment */
+  display: flex;
+  align-items: center;
+  z-index: 1000; /* Ensures navbar stays on top */
+}
+
+.navbar-custom .navbar-brand {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #101828;
+  text-decoration: none;
+}
+
+.navbar-custom .navbar-brand img {
+  width: 140px;
+  height: auto;
+  margin-right: 10px; /* Space between logo and brand text */
+}
+
+.navbar-custom .nav-link {
+  color: #475467; /* Neutral gray */
+  font-weight: 600;
+  font-size: 16px;
+  padding: 10px 15px; /* Padding for clickable area */
+  text-decoration: none;
+}
+
+.navbar-custom .nav-link:hover {
+  color: #007bff; /* Blue color on hover */
+}
+
+.navbar-custom .nav-dropdown {
+  position: relative;
+}
+
+.navbar-custom .nav-dropdown .dropdown-menu {
+  position: absolute;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow for dropdown */
+  border-radius: 8px;
+  margin-top: 10px;
+  padding: 10px 0;
+  display: none; /* Hidden by default */
+  z-index: 1001;
+}
+
+.navbar-custom .nav-dropdown:hover .dropdown-menu {
+  display: block; /* Show dropdown on hover */
+}
+
+.navbar-custom .nav-dropdown-item {
+  color: #333; /* Dark gray for dropdown items */
+  padding: 10px 20px;
+  text-decoration: none;
+  display: block;
+  font-size: 14px;
+}
+
+.navbar-custom .nav-dropdown-item:hover {
+  background-color: #f8f9fa; /* Light gray background on hover */
+  color: #007bff; /* Blue color on hover */
+}
+
+.navbar-custom .navbar-toggler {
+  border: none;
+  background-color: transparent;
+  font-size: 24px;
+  cursor: pointer;
+  display: none; /* Hidden by default for larger screens */
+}
+
+.navbar-custom .profile-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #e0e0e0; /* Optional: border around image */
+}
+
+.navbar-custom .get-in-touch-btn {
+  background-color: #007bff; /* Primary blue */
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.navbar-custom .get-in-touch-btn:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+  .navbar-custom .navbar-toggler {
+    display: block; /* Show toggler on smaller screens */
+  }
+
+  .navbar-custom .navbar-collapse {
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: shadow for mobile menu */
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    z-index: 1001;
+  }
+
+  .navbar-custom .navbar-collapse.show {
+    display: flex; /* Show when toggled */
+  }
+
+  .navbar-custom .nav-link {
+    padding: 10px;
+    text-align: center;
+  }
+}

@@ -1,0 +1,35 @@
+.desi {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #F9FAFB;
+  padding: 20px;
+  border: 1px solid #F9FAFB;
+  border-radius: 16px;
+  width: 1216px;
+  text-align: center;
+  margin: auto;
+}
+
+/* Button Styles */
+.button {
+  background-color: #7F56D9;
+  border: 1px solid #7F56D9;
+  border-radius: 8px;
+  color: #fff;
+  padding: 12px 20px;
+}
+
+/* Mobile Styles (for screens smaller than 768px) */
+@media (max-width: 768px) {
+  .desi {
+    width: 100%; /* Make the container take full width */
+    padding: 15px; /* Adjust padding for smaller screens */
+  }
+
+  .button {
+    width: 100%; /* Make button take full width on small screens */
+    padding: 12px 0; /* Adjust button padding for mobile */
+  }
+}

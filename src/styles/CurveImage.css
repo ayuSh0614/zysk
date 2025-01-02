@@ -1,0 +1,40 @@
+/* Outer container to center the image */
+.curved-image-container {
+    display: flex;
+    justify-content: center; /* Centers the image horizontally */
+    padding: 0 32px; /* 32px padding on the left and right */
+    margin: 0 auto; /* Keeps it centered in the parent container */
+  }
+  
+  /* Styling for the image */
+  .curved-image {
+    width: 1156px; /* Image width */
+    height: 560px; /* Image height */
+    object-fit: cover; /* Ensures the image scales properly */
+    display: block;
+    
+    /* Border styles */
+    border-top-left-radius: 20px; /* Rounded top-left corner */
+    border-top-right-radius: 20px; /* Rounded top-right corner */
+    border: 8px solid #101828; /* Border color */
+    border-bottom: none; /* No border at the bottom */
+  }
+
+
+
+  @media (max-width: 768px) {
+    /* Adjust container padding for smaller screens */
+    .curved-image-container {
+      padding: 0 16px; /* Reduce side padding for smaller screens */
+    }
+  
+    /* Adjust the image styling */
+    .curved-image {
+      width: 100%; /* Make the image take full container width */
+      height: auto; /* Maintain aspect ratio */
+      border: 8px solid #101828; /* Add border on all four sides */
+      border-radius: 20px; /* Apply rounded corners to all sides */
+    }
+  }
+  
+  

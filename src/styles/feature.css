@@ -1,0 +1,124 @@
+.features-section {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  .features-header {
+    margin-bottom: 40px;
+  }
+  
+  .features-badge {
+    display: inline-block;
+    background-color: #f3f4f6;
+    color: #6941C6;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  
+  .raman {
+    color: #6941C6;
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .features-header h1 {
+        font-size: 36px;
+    font-weight: 600;
+    color: #101828;
+    margin: 10px 0;
+  }
+  
+  .features-header p {
+    font-size: 20px;
+    color: #475467;
+    font-weight: 400;
+  }
+  
+  .features-showcase {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+    gap: 20px;
+  }
+  
+  .mobile-image {
+    width: 200px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    display: none;
+  }
+  
+  .desktop-image {
+    width: 1216px;
+    height: auto;
+    border-radius: 15px;
+  }
+  
+  .features-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 40px;
+  }
+  
+  .feature-item {
+    flex: 1;
+    max-width: 300px;
+    margin: 20px;
+    text-align: left;
+  }
+  
+  .icon-placeholder {
+    font-size: 32px;
+    color: #7f56d9;
+    margin-bottom: 15px;
+  }
+  
+  .feature-item h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .feature-item p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+  }
+  
+  .feature-item a {
+    font-size: 14px;
+    color: #7f56d9;
+    text-decoration: none;
+  }
+  
+  .feature-item a:hover {
+    text-decoration: underline;
+  }
+
+  .features-ba{
+    color: #6941C6;
+  }
+
+  /* Existing styles... */
+
+/* Responsive styles for mobile devices */
+@media (max-width: 768px) {
+  /* Adjust image display for smaller screens */
+  .desktop-image {
+    display: none; /* Hide the desktop image on mobile */
+  }
+
+  .mobile-image {
+    display: block; /* Show the mobile image */
+    width: 100%; /* Make the mobile image responsive */
+    max-width: 300px; /* Set a max width for mobile images */
+    margin: 0 auto; /* Center the image */
+  }
+}
