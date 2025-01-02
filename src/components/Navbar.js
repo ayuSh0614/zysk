@@ -10,7 +10,7 @@ const NavbarComponent = () => {
   return (
     <Navbar className="navbar-custom" expand="lg">
       <Container>
-        {/* Left Part of Navbar */}
+        {/* Logo */}
         <Navbar.Brand href="#home">
           <img
             src={logo}
@@ -20,26 +20,27 @@ const NavbarComponent = () => {
           />
         </Navbar.Brand>
 
+        {/* Left-aligned Navigation Links */}
+        <Nav className="me-auto align-items-center">
+          <Nav.Link href="#home">Home</Nav.Link>
+          <NavDropdown title="Products" id="products-dropdown">
+            <NavDropdown.Item href="#product1">Product 1</NavDropdown.Item>
+            <NavDropdown.Item href="#product2">Product 2</NavDropdown.Item>
+            <NavDropdown.Item href="#product3">Product 3</NavDropdown.Item>
+          </NavDropdown>
+          <NavDropdown title="Resources" id="resources-dropdown">
+            <NavDropdown.Item href="#blog">Blog</NavDropdown.Item>
+            <NavDropdown.Item href="#documentation">
+              Documentation
+            </NavDropdown.Item>
+          </NavDropdown>
+          <Nav.Link href="#pricing">Pricing</Nav.Link>
+        </Nav>
+
+        {/* Profile Image on Right */}
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto align-items-center">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <NavDropdown title="Products" id="products-dropdown">
-              <NavDropdown.Item href="#product1">Product 1</NavDropdown.Item>
-              <NavDropdown.Item href="#product2">Product 2</NavDropdown.Item>
-              <NavDropdown.Item href="#product3">Product 3</NavDropdown.Item>
-            </NavDropdown>
-            <NavDropdown title="Resources" id="resources-dropdown">
-              <NavDropdown.Item href="#blog">Blog</NavDropdown.Item>
-              <NavDropdown.Item href="#documentation">
-                Documentation
-              </NavDropdown.Item>
-            </NavDropdown>
-            <Nav.Link href="#pricing">Pricing</Nav.Link>
-          </Nav>
-
-          {/* Right Part of Navbar */}
-          <Nav className="ms-3">
             <Image
               src={profilePhoto}
               alt="Profile"
