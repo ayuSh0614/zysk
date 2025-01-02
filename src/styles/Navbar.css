@@ -122,6 +122,7 @@
   }
 
   .navbar-custom .nav-link {
+    display: none;
     padding: 10px;
     text-align: center;
   }
